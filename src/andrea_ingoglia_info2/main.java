@@ -37,12 +37,15 @@ public class main {
 		System.out.println("Il team di Giocatore1: " );
 		giocatore1.stampaPerNome();
 		
+		System.out.println("Disparità di giocatore1: " + giocatore1.disparita());		
 		
 		giocatore1.Tradisci("W0", giocatore2);
 		
 		System.out.println("Il team di Giocatore2: " );
 		giocatore2.stampaPerNome();
 		
+		System.out.println("Disparità di giocatore2: " + giocatore2.disparita());
+
 		//Faccio lottare i personaggi
 		
 		saggio1.combatti(commerciante1);

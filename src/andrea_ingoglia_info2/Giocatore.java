@@ -86,7 +86,7 @@ public class Giocatore <Personaggio extends Comparable <Personaggio>>{
 	}
 	
 
-	public int disparita(Giocatore avversario) {
+	public int disparita() {
 		
 		//Stampo i punti forza totali del giocatore
 		

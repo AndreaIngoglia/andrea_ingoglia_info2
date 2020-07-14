@@ -8,6 +8,7 @@ abstract class Personaggio implements Comparable <Personaggio>, MetodiPersonaggi
 	
 	//L'unica scelta che il giocatore può effettuare è la scelta del TIPO di personaggio. 
 	//Per evitare ID uguali il numeroProgressivo viene assegnato automaticamente.
+	
 	Personaggio(String selezione, String nome){
 		
 		switch(selezione) {
@@ -33,6 +34,9 @@ abstract class Personaggio implements Comparable <Personaggio>, MetodiPersonaggi
 		return this.nomePersonaggio;
 	}
 	
+	
+	//Il confronto tra personaggi viene fatto in base al nome (ordine alfabetico)
+	
 	@Override
 	public int compareTo(Personaggio o) {
 		return this.nomePersonaggio.compareTo(o.nomePersonaggio);
@@ -53,16 +57,6 @@ abstract class Personaggio implements Comparable <Personaggio>, MetodiPersonaggi
 			System.out.println(avversario.toString() + " ha vinto contro " + this.toString());
 
 		}
-		
-		
-		
-		
-
-		
-		
 	}
-	
-	
-	
 
 }

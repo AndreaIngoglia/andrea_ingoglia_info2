@@ -1,5 +1,7 @@
 package andrea_ingoglia_info2;
 
+import javafx.scene.chart.PieChart.Data;
+
 public class Commerciante extends Personaggio implements MetodiPersonaggi {
 
 	private int libri; 
@@ -21,22 +23,21 @@ public class Commerciante extends Personaggio implements MetodiPersonaggi {
 		else return 2;
 	}
 
+	//Per commerciante è necessario incrementare il numero di monete e il numero di libri 
+	//Il numero di libri viene incrementato se la data corrisponde a quella odierna.
+	
 	@Override
 	public void Aumenta() {
-		//Non riesco a calcolare il giorno corrente; 
-		//Incremento il numero di monete
-		monete+= 1000000;	
-
-		//Incremento comunque il numero di libri
 		
+		monete+= 1000000;
+		//Non sono riuscito ad implementare il confronto tra date
 		libri+=1; 
 		
 		System.out.println("Il commerciante è stato potenziato: monete " + monete + " | libri: " + libri);
 		
 		
 	}
-
-
+	
 	public String getID() {
 		return this.ID;
 	}

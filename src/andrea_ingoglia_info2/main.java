@@ -4,7 +4,17 @@ public class main {
 
 	public static void main(String[] args) {
 
-		Personaggio nuovo=  new Personaggio('C', "Franco");
+		Personaggio franco=  new Guerriero('W', "Franco");
+		Personaggio franci = new Guerriero('W',  "giacomo");
+		franco.Aumenta();
+		franci.Aumenta();
+		
+		Personaggio mago = new Mago('M', "Maghetto");
+		mago.Aumenta();
+		mago.Aumenta();
+		mago.Aumenta();
+		
+		
 	}
 
 }

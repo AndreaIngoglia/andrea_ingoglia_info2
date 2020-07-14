@@ -1,6 +1,6 @@
 package andrea_ingoglia_info2;
 
-public class Personaggio {
+abstract class Personaggio implements MetodiPersonaggi {
 	
 	String ID; 
 	static int numeroProgressivo = 0; 
@@ -12,19 +12,30 @@ public class Personaggio {
 	
 	Personaggio(char selezione, String nome){
 		
-		
 		switch(selezione) {
-		case 'W' : 	ID = "" + selezione + numeroProgressivo; numeroProgressivo = numeroProgressivo ++ ;	
+		case 'W' : 	ID = "" + selezione + numeroProgressivo;
 		System.out.println("Hai creato un Guerriero"); this.nomePersonaggio= nome; break;
-		case 'M' : ID = "" + selezione + numeroProgressivo; numeroProgressivo = numeroProgressivo ++ ;	
+		case 'M' : ID = "" + selezione + numeroProgressivo; 
 		System.out.println("Hai creato un Mago"); this.nomePersonaggio= nome; break;
-		case 'S' : ID = "" + selezione + numeroProgressivo; numeroProgressivo = numeroProgressivo ++ ;	
+		case 'S' : ID = "" + selezione + numeroProgressivo; 
 		System.out.println("Hai creato un Saggio"); this.nomePersonaggio= nome; break;
-		case 'C' : ID = "" + selezione + numeroProgressivo; numeroProgressivo = numeroProgressivo ++ ;	
+		case 'C' : ID = "" + selezione + numeroProgressivo; 
 		System.out.println("Hai creato un commerciante"); this.nomePersonaggio= nome;  break; 
 		
-		default : System.out.println("Personaggio non creato");
+		default : System.out.println("Personaggio non creato"); numeroProgressivo ++ ; break;
+		
 		}
+	}
+
+	
+	@Override
+	public int Forza() {
+		return 0;
+	}
+
+	@Override
+	public void Aumenta() {
+		
 	}
 
 }

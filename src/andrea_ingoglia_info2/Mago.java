@@ -11,6 +11,8 @@ public class Mago extends Personaggio implements MetodiPersonaggi {
 	private int rosmarino;
 	private int muschio;
 	
+	
+	
 	Mago(char selezione, String nome) {
 		super(selezione, nome);
 		
@@ -37,32 +39,29 @@ public class Mago extends Personaggio implements MetodiPersonaggi {
 		switch(numeroCasuale) {
 		
 		case 0: 
-			if(basilico < MAX) basilico ++ ; 
-			System.out.println("Hai aumentato la quantità di basilico: " + basilico); break;
+			if(basilico < MAX) {
+				basilico ++ ; 
+				System.out.println("Hai aumentato la quantità di basilico: " + basilico);
+				}break;
 		case 1: 
-			if(alloro < MAX_alloro) alloro ++ ; 
-			System.out.println("Hai aumentato la quantità di alloro: " + alloro); break;
+			if(alloro < MAX_alloro) {
+				alloro ++ ; 
+				System.out.println("Hai aumentato la quantità di alloro: " + alloro);
+				}break;
 			
 		case 2: 
-			if(rosmarino < MAX) rosmarino ++ ; 
-			System.out.println("Hai aumentato la quantità di rosmarino: " + rosmarino); break;
 			
+			if(rosmarino < MAX) {
+				rosmarino ++ ; 
+				System.out.println("Hai aumentato la quantità di rosmarino: " + rosmarino);
+				}break;
 		case 3: 
-			if(muschio < MAX) muschio ++ ; 
-			System.out.println("Hai aumentato la quantità di muschio: " + muschio); break;
 			
+			if(muschio < MAX) {
+				muschio ++ ; 
+				System.out.println("Hai aumentato la quantità di muschio: " + muschio);
+				}break;	
 		}
-		
-		
-		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

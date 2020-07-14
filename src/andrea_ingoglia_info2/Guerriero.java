@@ -6,8 +6,7 @@ public class Guerriero extends Personaggio implements MetodiPersonaggi{
 	
 	Guerriero(char selezione, String nome) {
 		
-		super(selezione, nome);
-		ID = "W" + numeroProgressivo; 
+		super(selezione, nome); 
 		spada = false;
 	}
 
@@ -32,9 +31,6 @@ public class Guerriero extends Personaggio implements MetodiPersonaggi{
 		}
 		
 	}
-	
-	
-	
 	
 	
 }

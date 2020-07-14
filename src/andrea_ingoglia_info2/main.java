@@ -5,6 +5,7 @@ public class main {
 	public static void main(String[] args) {
 
 		
+		Giocatore andrea = new Giocatore("Andrea");
 		
 		Personaggio franco=  new Guerriero('W', "Franco");
 		Personaggio franci = new Guerriero('W',  "giacomo");
@@ -23,6 +24,17 @@ public class main {
 		
 		saggio.Aumenta();
 		System.out.println(saggio.Forza());
+		
+		andrea.aggiungiPersonaggio(franco);
+		andrea.aggiungiPersonaggio(franci);
+		andrea.aggiungiPersonaggio(mago);
+		andrea.aggiungiPersonaggio(saggio);
+		
+		andrea.stampaPerNome();
+
+
+
+
 
 	}
 

@@ -1,14 +1,13 @@
 package andrea_ingoglia_info2;
 
-abstract class Personaggio implements MetodiPersonaggi { 
-	
+abstract class Personaggio implements Comparable <Personaggio>, MetodiPersonaggi{
 	String ID; 
 	static int numeroProgressivo = 0; 
 	String nomePersonaggio; 
 	
 	//L'unica scelta che il giocatore può effettuare è la scelta del TIPO di personaggio. 
 	//Per evitare ID uguali il numeroProgressivo viene assegnato automaticamente.
-	//Non ho creato eccezioni perché non vanno bene con il costruttore.
+	
 	
 	Personaggio(char selezione, String nome){
 		
@@ -30,16 +29,32 @@ abstract class Personaggio implements MetodiPersonaggi {
 		
 		}
 	}
-
 	
-	@Override
-	public int Forza() {
-		return 0;
+	
+
+	public String getName() {
+		
+		return this.nomePersonaggio;
+	}
+	
+	public String getID() {
+		
+		return this.ID;
 	}
 
 	@Override
-	public void Aumenta() {
+	public int compareTo(Personaggio o) {
+		return this.nomePersonaggio.compareTo(o.nomePersonaggio);
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

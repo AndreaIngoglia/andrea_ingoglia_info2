@@ -1,6 +1,6 @@
 package andrea_ingoglia_info2;
 
-abstract class Personaggio implements MetodiPersonaggi {
+abstract class Personaggio implements MetodiPersonaggi { 
 	
 	String ID; 
 	static int numeroProgressivo = 0; 
@@ -13,16 +13,20 @@ abstract class Personaggio implements MetodiPersonaggi {
 	Personaggio(char selezione, String nome){
 		
 		switch(selezione) {
-		case 'W' : 	ID = "" + selezione + numeroProgressivo;
-		System.out.println("Hai creato un Guerriero"); this.nomePersonaggio= nome; break;
-		case 'M' : ID = "" + selezione + numeroProgressivo; 
-		System.out.println("Hai creato un Mago"); this.nomePersonaggio= nome; break;
-		case 'S' : ID = "" + selezione + numeroProgressivo; 
-		System.out.println("Hai creato un Saggio"); this.nomePersonaggio= nome; break;
-		case 'C' : ID = "" + selezione + numeroProgressivo; 
-		System.out.println("Hai creato un commerciante"); this.nomePersonaggio= nome;  break; 
 		
-		default : System.out.println("Personaggio non creato"); numeroProgressivo ++ ; break;
+		case 'W' : ID = "W" + numeroProgressivo ++; 
+		System.out.println("Hai creato un Guerriero "+ this.ID + " "+ this.nomePersonaggio); this.nomePersonaggio= nome; break;
+		
+		case 'M' : ID = "M" + numeroProgressivo ++; 
+		System.out.println("Hai creato un Mago "+ this.ID + " "+ this.nomePersonaggio); this.nomePersonaggio= nome; break;
+		
+		case 'S' : ID = "S" + numeroProgressivo++; 
+		System.out.println("Hai creato un Saggio " + this.ID + " "+ this.nomePersonaggio); this.nomePersonaggio= nome; break;
+		
+		case 'C' : ID = "C" + numeroProgressivo++; 
+		System.out.println("Hai creato un commerciante " + this.ID + " "+ this.nomePersonaggio); this.nomePersonaggio= nome;  break; 
+		
+		default : System.out.println("Personaggio non creato"); break;
 		
 		}
 	}

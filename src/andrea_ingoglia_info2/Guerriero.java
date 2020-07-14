@@ -4,7 +4,7 @@ public class Guerriero extends Personaggio implements MetodiPersonaggi{
 	
 	boolean spada; 
 	
-	Guerriero(char selezione, String nome) {
+	Guerriero(String selezione, String nome) {
 		
 		super(selezione, nome); 
 		spada = false;

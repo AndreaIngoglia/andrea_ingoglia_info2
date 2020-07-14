@@ -4,7 +4,7 @@ public class Saggio extends Personaggio implements MetodiPersonaggi {
 	
 	private int libri; 
 	
-	Saggio(char selezione, String nome) {
+	Saggio(String selezione, String nome) {
 		super(selezione, nome);
 		
 		libri = 0; 

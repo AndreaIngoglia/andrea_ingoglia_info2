@@ -5,7 +5,7 @@ public class Commerciante extends Personaggio implements MetodiPersonaggi {
 	private int libri; 
 	private double monete; 
 	
-	Commerciante(char selezione, String nome) {
+	Commerciante(String selezione, String nome) {
 		super(selezione, nome);
 		
 		libri = 0;

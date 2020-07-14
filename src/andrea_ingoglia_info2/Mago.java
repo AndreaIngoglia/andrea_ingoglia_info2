@@ -13,7 +13,7 @@ public class Mago extends Personaggio implements MetodiPersonaggi {
 	
 	
 	
-	Mago(char selezione, String nome) {
+	Mago(String selezione, String nome) {
 		super(selezione, nome);
 		
 		basilico = 0;

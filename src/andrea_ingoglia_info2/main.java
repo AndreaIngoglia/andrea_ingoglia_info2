@@ -7,19 +7,18 @@ public class main {
 		//Main in cui vengono testati i metodi senza lettura da file (Togliere /**/ per verificare)
 		
 		
-		/*
 		Giocatore giocatore1 = new Giocatore("Andrea");
 		
 		Giocatore giocatore2 = new Giocatore("Giuseppe");
 		
 		
-		Personaggio guerriero1=  new Guerriero('W', "franco");
-		Personaggio guerriero2 = new Guerriero('W',  "giacomo");
-		Personaggio mago1=  new Mago('M', "mago");
-		Personaggio mago2=  new Mago('M', "magikarp");
-		Personaggio saggio1=  new Saggio('S', "gandalf");
-		Personaggio saggio2=  new Saggio('S', "silente");
-		Personaggio commerciante1=  new Commerciante('C', "paperone");
+		Personaggio guerriero1=  new Guerriero("W", "franco");
+		Personaggio guerriero2 = new Guerriero("W",  "giacomo");
+		Personaggio mago1=  new Mago("M", "mago");
+		Personaggio mago2=  new Mago("M", "magikarp");
+		Personaggio saggio1=  new Saggio("S", "gandalf");
+		Personaggio saggio2=  new Saggio("S", "silente");
+		Personaggio commerciante1=  new Commerciante("C", "paperone");
 		
 		guerriero1.Aumenta();
 		mago1.Aumenta();
@@ -49,17 +48,12 @@ public class main {
 		saggio1.combatti(commerciante1);
 		guerriero2.combatti(guerriero1);
 		
-		*/
+		System.out.println("PROVA LETTURA DA FILE");
+		
+		giocatore1.caricaDaFile("path.txt");
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		
 
 	}

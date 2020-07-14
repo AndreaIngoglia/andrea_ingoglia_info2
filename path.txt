@@ -1,0 +1,6 @@
+W, guerriero
+W, guerriera
+M, maga
+M, mago
+C, commerciante
+S, saggia

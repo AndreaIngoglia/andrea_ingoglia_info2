@@ -2,6 +2,8 @@ package andrea_ingoglia_info2;
 
 import java.util.Vector;
 
+import prog.io.FileInputManager;
+
 public class Giocatore <Personaggio extends Comparable <Personaggio>>{
 	
 	String nome; 
@@ -110,8 +112,61 @@ public class Giocatore <Personaggio extends Comparable <Personaggio>>{
 		return somma;
 		
 	}
+	
+	
+	
+	public void caricaDaFile(String path) {
 		
+		String righe;
+		String campi[] = new String[5];
+		
+		FileInputManager in = new FileInputManager(path);
+		
+		do {
+			righe = in.readLine();
+			if (righe != null) {
+				
+				campi = righe.split(",");
+				String scelta = campi[0];
+				
+				String nome = campi[1];
+				
+				
+				if (scelta.equals("W")){
+					
+					Personaggio nuovo = (Personaggio) new Guerriero("W", nome);
+					this.aggiungiPersonaggio(nuovo);
+				
+				
+				} else if(scelta.equals("M")) {
+					
+					Personaggio nuovo = (Personaggio) new Mago("M", nome);
+					this.aggiungiPersonaggio(nuovo);
+				
+				
+				}else if(scelta.equals("S")) {
+					
+					Personaggio nuovo = (Personaggio) new Saggio("S", nome);
+					this.aggiungiPersonaggio(nuovo);	
+				
+				}else if(scelta.equals("C")) {
+					
+					Personaggio nuovo = (Personaggio) new Commerciante("C", nome);
+					this.aggiungiPersonaggio(nuovo);
+				}
+		}
+			
+	} while (righe != null);
+
 	}
+	
+
+
+
+
+
+
+}
 	
 		
 	

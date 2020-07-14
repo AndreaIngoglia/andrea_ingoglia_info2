@@ -8,20 +8,20 @@ abstract class Personaggio implements Comparable <Personaggio>, MetodiPersonaggi
 	
 	//L'unica scelta che il giocatore può effettuare è la scelta del TIPO di personaggio. 
 	//Per evitare ID uguali il numeroProgressivo viene assegnato automaticamente.
-	Personaggio(char selezione, String nome){
+	Personaggio(String selezione, String nome){
 		
 		switch(selezione) {
 		
-		case 'W' : ID = "W" + numeroProgressivo ++; this.nomePersonaggio = nome;
+		case "W" : ID = "W" + numeroProgressivo ++; this.nomePersonaggio = nome;
 		System.out.println("Hai creato un Guerriero "+ this.ID + " "+ this.nomePersonaggio); this.nomePersonaggio= nome; break;
 		
-		case 'M' : ID = "M" + numeroProgressivo ++;  this.nomePersonaggio = nome;
+		case "M" : ID = "M" + numeroProgressivo ++;  this.nomePersonaggio = nome;
 		System.out.println("Hai creato un Mago "+ this.ID + " "+ this.nomePersonaggio); this.nomePersonaggio= nome; break;
 		
-		case 'S' : ID = "S" + numeroProgressivo++; this.nomePersonaggio = nome;
+		case "S" : ID = "S" + numeroProgressivo++; this.nomePersonaggio = nome;
 		System.out.println("Hai creato un Saggio " + this.ID + " "+ this.nomePersonaggio); this.nomePersonaggio= nome; break;
 		
-		case 'C' : ID = "C" + numeroProgressivo++; this.nomePersonaggio = nome;
+		case "C" : ID = "C" + numeroProgressivo++; this.nomePersonaggio = nome;
 		System.out.println("Hai creato un commerciante " + this.ID + " "+ this.nomePersonaggio); this.nomePersonaggio= nome;  break; 
 		
 		default : System.out.println("Personaggio non creato"); break;

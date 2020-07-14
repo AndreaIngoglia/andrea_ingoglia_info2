@@ -64,4 +64,8 @@ public class Mago extends Personaggio implements MetodiPersonaggi {
 		}
 	}
 
+
+	public String getID() {
+		return this.ID;
+	}
 }

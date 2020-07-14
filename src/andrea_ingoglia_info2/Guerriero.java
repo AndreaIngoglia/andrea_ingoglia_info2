@@ -32,5 +32,10 @@ public class Guerriero extends Personaggio implements MetodiPersonaggi{
 		
 	}
 	
+
+	public String getID() {
+		return this.ID;
+	}
+	
 	
 }

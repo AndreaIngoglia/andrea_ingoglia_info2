@@ -23,7 +23,21 @@ public class Commerciante extends Personaggio implements MetodiPersonaggi {
 
 	@Override
 	public void Aumenta() {
+		//Non riesco a calcolare il giorno corrente; 
+		//Incremento il numero di monete
 		monete+= 1000000;	
+
+		//Incremento comunque il numero di libri
+		
+		libri+=1; 
+		
+		System.out.println("Il commerciante è stato potenziato: monete " + monete + " | libri: " + libri);
+		
+		
 	}
 
+
+	public String getID() {
+		return this.ID;
+	}
 }

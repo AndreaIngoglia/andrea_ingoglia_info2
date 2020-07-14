@@ -1,7 +1,5 @@
 package andrea_ingoglia_info2;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Vector;
 
 public class Giocatore <Personaggio extends Comparable <Personaggio>>{
@@ -37,9 +35,86 @@ public class Giocatore <Personaggio extends Comparable <Personaggio>>{
 	}
 	
 	public void stampaPerNome() {
-		
 		System.out.println(personaggi.toString());
+	}
+	
+	public void Tradisci (String ID_traditore, Giocatore destinazione) {
+		//Controllo che il personaggio da trasferire sia nella lista dei  personaggi
+		
+		for(Personaggio cur: personaggi) {
+			
+			if(cur instanceof Guerriero) {
+				
+				if(((Guerriero) cur).getID().equals(ID_traditore)) {
+				personaggi.remove(cur);
+				destinazione.personaggi.add(cur);
+				return;
+				}
+				
+			}else if(cur instanceof Mago) {
+				
+				if(((Mago) cur).getID().equals(ID_traditore)) {
+				personaggi.remove(cur);
+				destinazione.personaggi.add(cur);
+				return;
+
+				}
+				
+			}else if(cur instanceof Commerciante) {
+				
+				if(((Commerciante) cur).getID().equals(ID_traditore)) {
+				personaggi.remove(cur);
+				destinazione.personaggi.add(cur);
+				return;
+				}
+				
+			}else if(cur instanceof Saggio) {
+
+				if(((Saggio) cur).getID().equals(ID_traditore)) {
+				personaggi.remove(cur);
+				destinazione.personaggi.add(cur);
+				return;
+
+				}
+
+			}
+		}
+		
+		System.out.println("Il personaggio non è presente nella lista");
+	}
+	
+
+	public int disparita(Giocatore avversario) {
+		
+		//Stampo i punti forza totali del giocatore
+		
+		int somma = 0; 
+		
+		for(Personaggio cur: personaggi) {
+			
+			if(cur instanceof Guerriero) {
+				somma+= ((Guerriero) cur).Forza();
+				
+			}else if(cur instanceof Mago) {
+				somma+= ((Mago) cur).Forza();
+
+			}else if(cur instanceof Commerciante) {
+				somma+= ((Commerciante) cur).Forza();
+			
+			}else if(cur instanceof Saggio) {
+				somma+= ((Saggio) cur).Forza();
+			}
+
+		}
+		
+		return somma;
+		
+	}
 		
 	}
 	
-}
+		
+	
+	
+	
+	

@@ -22,6 +22,11 @@ public class Saggio extends Personaggio implements MetodiPersonaggi {
 	public void Aumenta() {
 		libri ++ ;
 		System.out.println("Il Saggio " + super.ID + " " + super.nomePersonaggio + " ha acquisito un libro:  " + libri );
-	}	
+	}
+	
+
+	public String getID() {
+		return this.ID;
+	}
 
 }

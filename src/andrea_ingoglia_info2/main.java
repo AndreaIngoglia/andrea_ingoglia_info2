@@ -4,37 +4,63 @@ public class main {
 
 	public static void main(String[] args) {
 
+		//Main in cui vengono testati i metodi senza lettura da file (Togliere /**/ per verificare)
 		
-		Giocatore andrea = new Giocatore("Andrea");
 		
-		Personaggio franco=  new Guerriero('W', "Franco");
-		Personaggio franci = new Guerriero('W',  "giacomo");
-		franco.Aumenta();
-		franci.Aumenta();
-		franco.Aumenta();
+		/*
+		Giocatore giocatore1 = new Giocatore("Andrea");
 		
-		Personaggio mago = new Mago('M', "Maghetto");
-		mago.Aumenta();
-		mago.Aumenta();
-		mago.Aumenta();
+		Giocatore giocatore2 = new Giocatore("Giuseppe");
 		
-		Personaggio saggio = new Saggio ('S', "saggio");
 		
-		System.out.println(saggio.Forza());
+		Personaggio guerriero1=  new Guerriero('W', "franco");
+		Personaggio guerriero2 = new Guerriero('W',  "giacomo");
+		Personaggio mago1=  new Mago('M', "mago");
+		Personaggio mago2=  new Mago('M', "magikarp");
+		Personaggio saggio1=  new Saggio('S', "gandalf");
+		Personaggio saggio2=  new Saggio('S', "silente");
+		Personaggio commerciante1=  new Commerciante('C', "paperone");
 		
-		saggio.Aumenta();
-		System.out.println(saggio.Forza());
+		guerriero1.Aumenta();
+		mago1.Aumenta();
+		mago1.Aumenta();
 		
-		andrea.aggiungiPersonaggio(franco);
-		andrea.aggiungiPersonaggio(franci);
-		andrea.aggiungiPersonaggio(mago);
-		andrea.aggiungiPersonaggio(saggio);
+		saggio1.Aumenta();
 		
-		andrea.stampaPerNome();
-
-
-
-
+		
+		giocatore1.aggiungiPersonaggio(guerriero1);
+		giocatore1.aggiungiPersonaggio(guerriero2);
+		giocatore1.aggiungiPersonaggio(mago1);
+		giocatore1.aggiungiPersonaggio(mago2);
+		giocatore1.aggiungiPersonaggio(saggio2);
+		giocatore1.aggiungiPersonaggio(commerciante1);
+		
+		System.out.println("Il team di Giocatore1: " );
+		giocatore1.stampaPerNome();
+		
+		
+		giocatore1.Tradisci("W0", giocatore2);
+		
+		System.out.println("Il team di Giocatore2: " );
+		giocatore2.stampaPerNome();
+		
+		//Faccio lottare i personaggi
+		
+		saggio1.combatti(commerciante1);
+		guerriero2.combatti(guerriero1);
+		
+		*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 
